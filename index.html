@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="REDTEAM — Toronto's independent print magazine covering design, culture, and the city.">
+  <meta name="keywords" content="Toronto, Canadian, print magazine, design, culture, REDTEAM">
+  <title>REDTEAM — Toronto's Magazine</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="REDTEAM">
+  <meta property="og:description" content="Toronto's independent print magazine.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="index.html" class="nav-logo">RED<span>T</span>EAM</a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#issues">Issues</a></li>
+      <li><a href="index.html#newsletter">Subscribe</a></li>
+    </ul>
+
+    <div style="display:flex;align-items:center;gap:20px;">
+      <button class="nav-cart" aria-label="Open cart">
+        Cart
+        <span class="cart-count" aria-live="polite">0</span>
+      </button>
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO — Update: change issue label, title, summary, and swap
+     the hero-image div for a real <img> when you have photography
+     ============================================================ -->
+<section class="hero" aria-label="Featured issue">
+  <div class="hero-inner">
+
+    <div class="hero-text">
+      <div class="hero-issue-label">
+        <span class="eyebrow eyebrow--accent">Vol. 01 — Issue 04</span>
+      </div>
+
+      <h1 class="hero-title">
+        The<br>
+        <em>City</em><br>
+        Issue
+      </h1>
+
+      <p class="hero-summary">
+        Toronto is not one city — it's forty. We spent six months in every corner,
+        every transit line, every diner still open at 3am to find out what
+        ties it together. Spoiler: it's not the Leafs.
+      </p>
+
+      <div class="hero-actions">
+        <a href="shop.html" class="btn btn-primary">Buy Issue 04 — $18</a>
+        <a href="shop.html" class="btn btn-ghost">See All Issues</a>
+      </div>
+    </div>
+
+    <!-- SWAP: Replace placeholder with <img src="images/issue-04-cover.jpg" alt="Issue 04 cover">
+         inside the hero-image div when ready -->
+    <div class="hero-image hero-image--placeholder" aria-hidden="true">
+      <span class="placeholder-text">04</span>
+      <div class="hero-image-overlay"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     TICKER — Update: edit the ticker items below
+     ============================================================ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">Issue 04 — The City Issue — On Sale Now</span>
+    <span class="ticker-item">Free Shipping on Orders Over $60 CAD</span>
+    <span class="ticker-item">Toronto's Independent Print Magazine</span>
+    <span class="ticker-item">Issue 05 — Submissions Open</span>
+    <span class="ticker-item">Stockists: Likely General, Type Books, A-1 Records</span>
+    <span class="ticker-item">Issue 04 — The City Issue — On Sale Now</span>
+    <span class="ticker-item">Free Shipping on Orders Over $60 CAD</span>
+    <span class="ticker-item">Toronto's Independent Print Magazine</span>
+    <span class="ticker-item">Issue 05 — Submissions Open</span>
+    <span class="ticker-item">Stockists: Likely General, Type Books, A-1 Records</span>
+  </div>
+</div>
+
+<!-- ============================================================
+     EDITORIAL GRID — Update: replace card content with real
+     articles. Each .card is one story. Add/remove cards as needed.
+     ============================================================ -->
+<section class="editorial-grid" aria-label="Latest stories">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Latest</h2>
+      <a href="#" class="section-link">All Stories →</a>
+    </div>
+
+    <!-- Primary row: 1 large + 1 column -->
+    <div class="grid-primary">
+
+      <!-- FEATURED CARD -->
+      <article class="card card--featured">
+        <div class="card-image card-image--placeholder" aria-hidden="true">
+          <span>01</span>
+        </div>
+        <!-- Swap placeholder with:
+        <div class="card-image">
+          <img src="images/story-city-planning.jpg" alt="Story description">
+        </div> -->
+        <div class="card-body">
+          <span class="card-category">City</span>
+          <h3 class="card-title">Why Toronto Keeps Building the Wrong Things</h3>
+          <p class="card-excerpt">
+            Three decades of transit plans, six cancelled lines, one mayor
+            who still thinks the car is coming back. A city in permanent
+            construction of nothing.
+          </p>
+          <div class="card-meta">Maya Chen &nbsp;·&nbsp; 14 min read</div>
+        </div>
+      </article>
+
+      <!-- SIDE CARD -->
+      <article class="card">
+        <div class="card-image card-image--placeholder" aria-hidden="true">
+          <span>02</span>
+        </div>
+        <div class="card-body">
+          <span class="card-category">Culture</span>
+          <h3 class="card-title">The Last Record Stores</h3>
+          <p class="card-excerpt">
+            Streaming killed the album. But on Spadina, Kensington, and
+            a basement in Scarborough, vinyl is having the last word.
+          </p>
+          <div class="card-meta">Darius Okafor &nbsp;·&nbsp; 8 min read</div>
+        </div>
+      </article>
+
+    </div><!-- /grid-primary -->
+
+    <!-- Secondary row: 3 cards -->
+    <div class="grid-secondary">
+
+      <article class="card">
+        <div class="card-image card-image--placeholder" aria-hidden="true">
+          <span>03</span>
+        </div>
+        <div class="card-body">
+          <span class="card-category">Design</span>
+          <h3 class="card-title">Brutalism Is Back, Sort Of</h3>
+          <p class="card-excerpt">The architecture Toronto once tore down is now the reference for everything being built online.</p>
+          <div class="card-meta">Priya Nair &nbsp;·&nbsp; 6 min read</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image card-image--placeholder" aria-hidden="true">
+          <span>04</span>
+        </div>
+        <div class="card-body">
+          <span class="card-category">Food</span>
+          <h3 class="card-title">Where the City Eats at 2AM</h3>
+          <p class="card-excerpt">After the bars close, the real Toronto shows up. A late-night guide written in grease.</p>
+          <div class="card-meta">Sam Vito &nbsp;·&nbsp; 5 min read</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image card-image--placeholder" aria-hidden="true">
+          <span>05</span>
+        </div>
+        <div class="card-body">
+          <span class="card-category">Politics</span>
+          <h3 class="card-title">The Housing Lie They Keep Telling</h3>
+          <p class="card-excerpt">Supply. Affordability. Density. The three words used to say nothing about the actual problem.</p>
+          <div class="card-meta">Ana Ferreira &nbsp;·&nbsp; 10 min read</div>
+        </div>
+      </article>
+
+    </div><!-- /grid-secondary -->
+  </div>
+</section>
+
+<!-- ============================================================
+     MANIFESTO BREAK
+     ============================================================ -->
+<section class="manifesto" aria-hidden="true">
+  <div class="container">
+    <p class="manifesto-text">
+      Print is not <em>dead</em>.<br>
+      It was just <span class="outline">resting</span>.
+    </p>
+    <p class="manifesto-sub">Toronto, Ontario — Est. 2022</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     BACK ISSUES — Update: add/edit .issue-card blocks.
+     Set data-product-id to a unique ID for cart tracking.
+     ============================================================ -->
+<section class="issues-section" id="issues" aria-label="Back issues">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Issues</h2>
+      <a href="shop.html" class="section-link">Shop All →</a>
+    </div>
+
+    <div class="issues-strip">
+
+      <!-- ISSUE CARD: duplicate this block to add more issues -->
+      <div class="issue-card" data-product-id="issue-01">
+        <div class="issue-cover issue-cover--placeholder" aria-hidden="true">
+          <span class="vol">01</span>
+          <span class="issue-num">Vol. 01</span>
+        </div>
+        <!-- Swap placeholder:
+        <div class="issue-cover">
+          <img src="images/issue-01-cover.jpg" alt="REDTEAM Issue 01 cover">
+        </div> -->
+        <div class="issue-info">
+          <div class="issue-vol">Vol. 01 — Issue 01</div>
+          <div class="issue-title">The Launch Issue</div>
+          <div class="issue-price">$15 CAD</div>
+        </div>
+      </div>
+
+      <div class="issue-card" data-product-id="issue-02">
+        <div class="issue-cover issue-cover--placeholder" aria-hidden="true">
+          <span class="vol">02</span>
+          <span class="issue-num">Vol. 01</span>
+        </div>
+        <div class="issue-info">
+          <div class="issue-vol">Vol. 01 — Issue 02</div>
+          <div class="issue-title">The Work Issue</div>
+          <div class="issue-price">$15 CAD</div>
+        </div>
+      </div>
+
+      <div class="issue-card" data-product-id="issue-03">
+        <div class="issue-cover issue-cover--placeholder" aria-hidden="true">
+          <span class="vol">03</span>
+          <span class="issue-num">Vol. 01</span>
+        </div>
+        <div class="issue-info">
+          <div class="issue-vol">Vol. 01 — Issue 03</div>
+          <div class="issue-title">The Night Issue</div>
+          <div class="issue-price">$15 CAD</div>
+        </div>
+      </div>
+
+      <div class="issue-card" data-product-id="issue-04">
+        <div class="issue-cover issue-cover--placeholder" aria-hidden="true">
+          <span class="vol" style="color:var(--accent)">04</span>
+          <span class="issue-num">Vol. 01 — New</span>
+        </div>
+        <div class="issue-info">
+          <div class="issue-vol">Vol. 01 — Issue 04</div>
+          <div class="issue-title">The City Issue</div>
+          <div class="issue-price">$18 CAD</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     NEWSLETTER — Update: wire up the form submit in script.js
+     Newsletter.init() handles the submit event.
+     ============================================================ -->
+<section class="newsletter" id="newsletter" aria-label="Newsletter signup">
+  <div class="container">
+    <div class="newsletter-copy">
+      <h2 class="section-title">Stay in the loop</h2>
+      <p>New issues, submissions, events. No noise.</p>
+    </div>
+    <form class="newsletter-form" novalidate>
+      <input
+        type="email"
+        class="newsletter-input"
+        placeholder="your@email.com"
+        aria-label="Email address"
+        required
+      >
+      <button type="submit" class="btn btn-accent">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER — Update: edit links, social handles, location
+     ============================================================ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">RED<span>T</span>EAM</a>
+        <p>Toronto's independent print magazine for design, culture, and the city. Published quarterly.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Magazine</h4>
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="index.html#issues">Back Issues</a></li>
+          <li><a href="#">Subscriptions</a></li>
+          <li><a href="#">Stockists</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Submissions</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#" rel="noopener">Instagram</a></li>
+          <li><a href="#" rel="noopener">X / Twitter</a></li>
+          <li><a href="#" rel="noopener">Newsletter</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 REDTEAM Magazine. Toronto, Ontario.</p>
+      <nav class="footer-legal" aria-label="Legal links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Shipping & Returns</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     CART DRAWER
+     ============================================================ -->
+<div class="cart-overlay" aria-hidden="true"></div>
+<aside class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h2>Cart</h2>
+    <button class="cart-close" aria-label="Close cart">×</button>
+  </div>
+  <div class="cart-items">
+    <div class="cart-empty">
+      <p>Your cart is empty</p>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total</span>
+      <span class="cart-total-price">$0.00 CAD</span>
+    </div>
+    <button class="btn btn-primary checkout-btn" onclick="handleCheckout()">
+      Checkout
+    </button>
+    <p class="cart-note">Taxes & shipping calculated at checkout</p>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

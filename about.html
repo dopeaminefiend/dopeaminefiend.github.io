@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About REDTEAM — Toronto's independent print magazine.">
+  <title>About — REDTEAM</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="index.html" class="nav-logo">RED<span>T</span>EAM</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="index.html#issues">Issues</a></li>
+      <li><a href="index.html#newsletter">Subscribe</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:20px;">
+      <button class="nav-cart" aria-label="Open cart">
+        Cart <span class="cart-count">0</span>
+      </button>
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ABOUT HERO -->
+<header class="about-hero">
+  <div class="container">
+    <span class="eyebrow" style="margin-bottom:20px;display:block;">About REDTEAM</span>
+    <h1 class="about-hero-title">Made in<br><span style="color:var(--accent)">Toronto</span>,<br>for Toronto.</h1>
+  </div>
+</header>
+
+<!-- ABOUT BODY -->
+<section class="about-body">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-text">
+        <!-- Update: replace with real copy -->
+        <p>
+          REDTEAM is an independent quarterly print magazine published out of Toronto, Ontario.
+          We cover design, culture, housing, music, food, and the politics of living in a city
+          that keeps changing faster than most people can keep up with.
+        </p>
+        <p>
+          We started in 2022 because we wanted a magazine that felt like it was actually about
+          Toronto — not a generic city-life brand with a Toronto flag slapped on it. Every issue
+          is reported, photographed, and designed in the city.
+        </p>
+        <p>
+          REDTEAM is reader-funded. We don't take programmatic advertising and we're not backed
+          by a media conglomerate. If you buy a copy, you're keeping this thing alive.
+          That's the whole deal.
+        </p>
+        <p>
+          We publish four times a year. Submissions for Issue 05 are open now.
+          See the submissions page for guidelines.
+        </p>
+        <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="shop.html" class="btn btn-primary">Buy an Issue</a>
+          <a href="#" class="btn btn-ghost">Submissions</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="about-stats">
+          <!-- Update: replace with real numbers -->
+          <div class="stat">
+            <div class="stat-number">04</div>
+            <div class="stat-label">Issues Published</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">148</div>
+            <div class="stat-label">Pages per Issue</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">500</div>
+            <div class="stat-label">Print Run</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">2022</div>
+            <div class="stat-label">Founded</div>
+          </div>
+        </div>
+
+        <div style="margin-top:40px;border-top:1px solid var(--grey-mid);padding-top:32px;">
+          <span class="eyebrow" style="margin-bottom:16px;display:block;">Stockists</span>
+          <ul style="display:flex;flex-direction:column;gap:10px;">
+            <li style="font-size:0.875rem;color:var(--grey-light);">Likely General — Toronto, ON</li>
+            <li style="font-size:0.875rem;color:var(--grey-light);">Type Books — Toronto, ON</li>
+            <li style="font-size:0.875rem;color:var(--grey-light);">A-1 Records — Toronto, ON</li>
+            <li style="font-size:0.875rem;color:var(--grey-light);">Ben McNally Books — Toronto, ON</li>
+            <!-- Add more stockists here -->
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT STRIP -->
+<section style="border-top:1px solid var(--grey-mid);border-bottom:1px solid var(--grey-mid);padding-block:clamp(40px,5vw,64px);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--grey-mid);border:1px solid var(--grey-mid);">
+      <div style="background:var(--black);padding:28px 24px;">
+        <div class="eyebrow" style="margin-bottom:10px;">Editorial</div>
+        <p style="font-size:0.875rem;color:var(--grey-light);line-height:1.7;">Story pitches, photo submissions, writing enquiries.</p>
+        <a href="mailto:editorial@redteammag.com" style="display:block;margin-top:12px;font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.08em;color:var(--white);border-bottom:1px solid var(--grey-mid);padding-bottom:2px;width:fit-content;">editorial@redteammag.com</a>
+      </div>
+      <div style="background:var(--black);padding:28px 24px;">
+        <div class="eyebrow" style="margin-bottom:10px;">Advertising</div>
+        <p style="font-size:0.875rem;color:var(--grey-light);line-height:1.7;">Print ads, partnerships, and event sponsorships.</p>
+        <a href="mailto:ads@redteammag.com" style="display:block;margin-top:12px;font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.08em;color:var(--white);border-bottom:1px solid var(--grey-mid);padding-bottom:2px;width:fit-content;">ads@redteammag.com</a>
+      </div>
+      <div style="background:var(--black);padding:28px 24px;">
+        <div class="eyebrow" style="margin-bottom:10px;">General</div>
+        <p style="font-size:0.875rem;color:var(--grey-light);line-height:1.7;">Everything else. Stockist enquiries, orders, press.</p>
+        <a href="mailto:hello@redteammag.com" style="display:block;margin-top:12px;font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.08em;color:var(--white);border-bottom:1px solid var(--grey-mid);padding-bottom:2px;width:fit-content;">hello@redteammag.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">RED<span>T</span>EAM</a>
+        <p>Toronto's independent print magazine for design, culture, and the city. Published quarterly.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Magazine</h4>
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="index.html#issues">Back Issues</a></li>
+          <li><a href="#">Subscriptions</a></li>
+          <li><a href="#">Stockists</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Submissions</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#" rel="noopener">Instagram</a></li>
+          <li><a href="#" rel="noopener">X / Twitter</a></li>
+          <li><a href="#" rel="noopener">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 REDTEAM Magazine. Toronto, Ontario.</p>
+      <nav class="footer-legal" aria-label="Legal links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Shipping & Returns</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div class="cart-overlay" aria-hidden="true"></div>
+<aside class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h2>Cart</h2>
+    <button class="cart-close" aria-label="Close cart">×</button>
+  </div>
+  <div class="cart-items">
+    <div class="cart-empty"><p>Your cart is empty</p></div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total</span>
+      <span class="cart-total-price">$0.00 CAD</span>
+    </div>
+    <button class="btn btn-primary checkout-btn" onclick="handleCheckout()">Checkout</button>
+    <p class="cart-note">Taxes & shipping calculated at checkout</p>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

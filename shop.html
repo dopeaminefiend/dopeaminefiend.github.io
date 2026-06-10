@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="REDTEAM Shop — Issues, merch, and subscriptions.">
+  <title>Shop — REDTEAM</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a href="index.html" class="nav-logo">RED<span>T</span>EAM</a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#issues">Issues</a></li>
+      <li><a href="index.html#newsletter">Subscribe</a></li>
+    </ul>
+
+    <div style="display:flex;align-items:center;gap:20px;">
+      <button class="nav-cart" aria-label="Open cart">
+        Cart
+        <span class="cart-count" aria-live="polite">0</span>
+      </button>
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     SHOP HERO
+     ============================================================ -->
+<header class="shop-hero" aria-label="Shop">
+  <div class="container">
+    <div class="shop-hero-inner">
+      <h1 class="shop-hero-title">Shop</h1>
+
+      <!-- Update: add/remove filter buttons as product categories change -->
+      <div class="shop-filters" role="group" aria-label="Filter products">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="issue">Issues</button>
+        <button class="filter-btn" data-filter="subscription">Subscription</button>
+        <button class="filter-btn" data-filter="merch">Merch</button>
+        <button class="filter-btn" data-filter="bundle">Bundles</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     TICKER
+     ============================================================ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">Free Shipping on Orders Over $60 CAD</span>
+    <span class="ticker-item">Issue 04 — The City Issue — In Stock</span>
+    <span class="ticker-item">Back Issues Available While Supplies Last</span>
+    <span class="ticker-item">Digital Subscriptions Available</span>
+    <span class="ticker-item">Free Shipping on Orders Over $60 CAD</span>
+    <span class="ticker-item">Issue 04 — The City Issue — In Stock</span>
+    <span class="ticker-item">Back Issues Available While Supplies Last</span>
+    <span class="ticker-item">Digital Subscriptions Available</span>
+  </div>
+</div>
+
+<!-- ============================================================
+     PRODUCT GRID
+     ============================================================
+     TO ADD A PRODUCT:
+       1. Copy a .product-card block
+       2. Update data-product-id (must be unique)
+       3. Update data-type (issue / subscription / merch / bundle)
+       4. Update .product-type, .product-name, .product-desc, .product-price
+       5. Replace placeholder div with <img> when you have photography
+       6. Add data-product-id matching a real product when wiring payment API
+     ============================================================ -->
+<section class="product-grid-section" aria-label="Products">
+  <div class="container">
+    <div class="product-grid">
+
+      <!-- ── ISSUE 04 (current) ────────────────────────────── -->
+      <article class="product-card" data-product-id="rt-issue-04" data-type="issue">
+        <div class="product-image product-image--placeholder" aria-hidden="true">
+          <span>04</span>
+          <div class="product-badge">New</div>
+        </div>
+        <!-- Swap placeholder:
+        <div class="product-image">
+          <img src="images/issue-04-cover.jpg" alt="REDTEAM Issue 04 — The City Issue">
+          <div class="product-badge">New</div>
+        </div> -->
+        <div class="product-info">
+          <div class="product-type">Issue</div>
+          <h2 class="product-name">Issue 04 — The City Issue</h2>
+          <p class="product-desc">148 pages. Toronto through 12 lenses. Photography, essays, fiction, and a fold-out map of the city that never made it to the tourism office.</p>
+          <div class="product-footer">
+            <div class="product-price">$18 CAD</div>
+            <button class="add-to-cart" aria-label="Add Issue 04 to cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── ANNUAL SUBSCRIPTION ───────────────────────────── -->
+      <article class="product-card" data-product-id="rt-sub-annual" data-type="subscription">
+        <div class="product-image product-image--placeholder" aria-hidden="true">
+          <span style="font-size:3rem;color:var(--accent)">SUB</span>
+        </div>
+        <div class="product-info">
+          <div class="product-type">Subscription</div>
+          <h2 class="product-name">Annual Subscription — 4 Issues</h2>
+          <p class="product-desc">Four issues delivered to your door, free shipping anywhere in Canada. Includes exclusive subscriber-only inserts in each issue.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="was">$72</span>$56 CAD
+            </div>
+            <button class="add-to-cart" aria-label="Add Annual Subscription to cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── ISSUE 03 ──────────────────────────────────────── -->
+      <article class="product-card" data-product-id="rt-issue-03" data-type="issue">
+        <div class="product-image product-image--placeholder" aria-hidden="true">
+          <span>03</span>
+        </div>
+        <div class="product-info">
+          <div class="product-type">Issue</div>
+          <h2 class="product-name">Issue 03 — The Night Issue</h2>
+          <p class="product-desc">What the city looks like after midnight. Shot entirely between 11pm and 5am across six nights in three neighbourhoods.</p>
+          <div class="product-footer">
+            <div class="product-price">$15 CAD</div>
+            <button class="add-to-cart" aria-label="Add Issue 03 to cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── TOTE BAG ──────────────────────────────────────── -->
+      <article class="product-card" data-product-id="rt-tote-01" data-type="merch">
+        <div class="product-image product-image--placeholder" aria-hidden="true">
+          <span style="font-size:2.5rem">TOTE</span>
+        </div>
+        <div class="product-info">
+          <div class="product-type">Merch</div>
+          <h2 class="product-name">REDTEAM Tote — Black</h2>
+          <p class="product-desc">Heavy canvas. Screen-printed in Toronto. One size. The kind of bag you actually use.</p>
+          <div class="product-footer">
+            <div class="product-price">$28 CAD</div>
+            <button class="add-to-cart" aria-label="Add tote to cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── BUNDLE: Issues 01–04 ──────────────────────────── -->
+      <article class="product-card" data-product-id="rt-bundle-all" data-type="bundle">
+        <div class="product-image product-image--placeholder" aria-hidden="true">
+          <span style="font-size:1.8rem;color:var(--accent)">01–04</span>
+        </div>
+        <div class="product-info">
+          <div class="product-type">Bundle</div>
+          <h2 class="product-name">Complete Collection — Issues 01–04</h2>
+          <p class="product-desc">All four issues. The full run so far. Free shipping included. Limited copies remaining.</p>
+          <div class="product-footer">
+            <div class="product-price">
+              <span class="was">$63</span>$52 CAD
+            </div>
+            <button class="add-to-cart" aria-label="Add bundle to cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── ISSUE 02 ──────────────────────────────────────── -->
+      <article class="product-card" data-product-id="rt-issue-02" data-type="issue">
+        <div class="product-image product-image--placeholder" aria-hidden="true">
+          <span>02</span>
+        </div>
+        <div class="product-info">
+          <div class="product-type">Issue</div>
+          <h2 class="product-name">Issue 02 — The Work Issue</h2>
+          <p class="product-desc">Who actually builds this city. Profiles of thirteen people doing work the economy pretends doesn't exist.</p>
+          <div class="product-footer">
+            <div class="product-price">$15 CAD</div>
+            <button class="add-to-cart" aria-label="Add Issue 02 to cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── ISSUE 01 ──────────────────────────────────────── -->
+      <article class="product-card" data-product-id="rt-issue-01" data-type="issue">
+        <div class="product-image product-image--placeholder" aria-hidden="true">
+          <span>01</span>
+        </div>
+        <div class="product-info">
+          <div class="product-type">Issue</div>
+          <h2 class="product-name">Issue 01 — The Launch Issue</h2>
+          <p class="product-desc">Where it started. Limited copies. The issue that had no right to exist and did anyway.</p>
+          <div class="product-footer">
+            <div class="product-price">$15 CAD</div>
+            <button class="add-to-cart" aria-label="Add Issue 01 to cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- ── TEE (coming soon) ─────────────────────────────── -->
+      <article class="product-card" data-product-id="rt-tee-01" data-type="merch" style="opacity:0.5;pointer-events:none;">
+        <div class="product-image product-image--placeholder" aria-hidden="true">
+          <span style="font-size:2rem">TEE</span>
+        </div>
+        <div class="product-info">
+          <div class="product-type">Merch</div>
+          <h2 class="product-name">REDTEAM Tee — Coming Soon</h2>
+          <p class="product-desc">In production. Join the newsletter to be notified when it drops.</p>
+          <div class="product-footer">
+            <div class="product-price" style="color:var(--grey-light)">TBD</div>
+            <button class="add-to-cart" disabled aria-label="Not available yet">Notify Me</button>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /product-grid -->
+  </div>
+</section>
+
+<!-- ============================================================
+     PAYMENT API INFO BLOCK (internal notes, not visible to users)
+     ============================================================
+     CONNECTING PAYMENTS:
+     - Shopify Storefront API: Set storeDomain and storefrontAccessToken
+       in script.js, then replace handleCheckout() with Shopify
+       Storefront graphQL checkoutCreate mutation.
+     - Stripe Checkout: Build a server endpoint (Node/Python/etc.)
+       that creates a Stripe Checkout Session with the cart line items,
+       then redirect to session.url.
+     Both paths keep this HTML/CSS intact — only script.js changes.
+     ============================================================ -->
+
+<!-- ============================================================
+     NEWSLETTER STRIP
+     ============================================================ -->
+<section class="newsletter" aria-label="Newsletter signup">
+  <div class="container">
+    <div class="newsletter-copy">
+      <h2 class="section-title">New drops, first.</h2>
+      <p>Get notified when new issues and merch land.</p>
+    </div>
+    <form class="newsletter-form" novalidate>
+      <input
+        type="email"
+        class="newsletter-input"
+        placeholder="your@email.com"
+        aria-label="Email address"
+        required
+      >
+      <button type="submit" class="btn btn-accent">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">RED<span>T</span>EAM</a>
+        <p>Toronto's independent print magazine for design, culture, and the city. Published quarterly.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Magazine</h4>
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="index.html#issues">Back Issues</a></li>
+          <li><a href="#">Subscriptions</a></li>
+          <li><a href="#">Stockists</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Submissions</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#" rel="noopener">Instagram</a></li>
+          <li><a href="#" rel="noopener">X / Twitter</a></li>
+          <li><a href="#" rel="noopener">Newsletter</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 REDTEAM Magazine. Toronto, Ontario.</p>
+      <nav class="footer-legal" aria-label="Legal links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Shipping & Returns</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="cart-overlay" aria-hidden="true"></div>
+<aside class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h2>Cart</h2>
+    <button class="cart-close" aria-label="Close cart">×</button>
+  </div>
+  <div class="cart-items">
+    <div class="cart-empty">
+      <p>Your cart is empty</p>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total</span>
+      <span class="cart-total-price">$0.00 CAD</span>
+    </div>
+    <button class="btn btn-primary checkout-btn" onclick="handleCheckout()">
+      Checkout
+    </button>
+    <p class="cart-note">Taxes & shipping calculated at checkout</p>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
